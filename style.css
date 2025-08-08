@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+
+.countainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.countainer > .card:first-child {
+    grid-column: 1 / 2;
+}
+
+aside {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+aside .card {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.Tentangsaya {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: 120px;
+    width: fit-content;
+
+}
+
+.card{
+    background: #eb0606;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: auto;
+    width: fit-content;
+}
+
+.hobi{
+    background: #fff;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.tentangsaya{
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: auto;
+    width: fit-content;
+    align-items: flex-start;
+}
+.contact{
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .countainer {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        grid-column: 1 / 2;
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+}
